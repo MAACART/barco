@@ -80,7 +80,7 @@ class Boat {
       quad(-150, -50, 150, -50, 100, 50, -100, 50);
         
     //pop function to restore current boat drawing settings
-    image(img, 0, 0);
+    image(img, 500, 500);
     pop();
   }
 }
