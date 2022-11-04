@@ -38,10 +38,10 @@ function setup() {
   startMicMsg();
 
     function startMicGesture() {
-  getAudioContext().resume().then(() => {
+    getAudioContext().resume().then(() => {
     console.log('Audio Context is now ON');
     canvas.mousePressed(false);
-    background(0);
+    background(255);
     phase = 1;
   });
 
