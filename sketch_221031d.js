@@ -16,7 +16,7 @@ let mic;
 let img;
 
 function preload() {
-  img = loadImage("assets/barco.png");
+  img = loadImage("Assets/barco.png");
 }
 
 function setup() {
