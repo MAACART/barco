@@ -76,9 +76,9 @@ class Boat {
     rotate(this.angle);
 
       ////displays the body of the boat as a quadrangle with a red color hahahahaha
-      //noStroke();
-      //fill('black');
-      //quad(-150, -50, 150, -50, 100, 50, -100, 50);
+      noStroke();
+      fill('black');
+      quad(-150, -50, 150, -50, 100, 50, -100, 50);
         
     //pop function to restore current boat drawing settings
     image(img, 0, 0);
