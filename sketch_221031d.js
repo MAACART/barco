@@ -15,15 +15,14 @@ let mic;
 
 let img;
 
-function preload() {
-  img = loadImage("Assets/barco.png");
-}
+
 
 function setup() {
   //sets default angle measurement mode to radians
   angleMode(RADIANS);
   //creates canvas size for running the sketch
   createCanvas(1000, 700);
+   img = loadImage("Assets/barco.png");
   //creates new ocean wave object with an amplitude, period, and phase
   wave = new Wave(350);
   //creates new boat object with an x and y position on the canvas
