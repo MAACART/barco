@@ -1,0 +1,40 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+.infobtn {
+  width: 15px;
+  height: 15px;
+  border: 0;
+  background-repeat: no-repeat;
+  background: url('assets/infobtn.svg');
+  cursor: pointer;
+}
+
+#modal {
+  background: #111E;
+  color: white;
+  z-index: 300;
+  display: none;
+}
+
+#modal p {
+  padding: 40px;
+  -webkit-transition:width 300ms ease-in-out, height 300ms ease-in-out;
+  -moz-transition:width 300ms ease-in-out, height 300ms ease-in-out;
+  -o-transition:width 300ms ease-in-out, height 300ms ease-in-out;
+  transition:width 300ms ease-in-out, height 300ms ease-in-out;
+}
+
+.closebtn {
+  width: 15px;
+  height: 15px;
+  border: 0;
+  background-repeat: no-repeat;
+  background: url('assets/closebtn.svg');
+  cursor: pointer;
+}
