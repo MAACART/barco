@@ -21,6 +21,7 @@ var modalOn;
 var pos;
 
 var canvas;
+var cor;
 
 function preload(){
   img = loadImage('assets/barco.png');
@@ -48,6 +49,8 @@ function setup() {
   
   mic.start();
   Iniciando();
+
+
 
  
 
@@ -180,11 +183,16 @@ class Wave {
   }
 
   update() {
+
+
+    cor = mic.getLevel()*1000; 
+    console.log( "nossa cor esta aqui" + cor  );
+
     //begins drawing of wave shape on the canvas
     beginShape();
     //displays ocean waves as a dark blue color without strokes
     noStroke();
-    fill(70,130,180);
+    fill(70- cor,130- cor,180 - cor);
     //declares variable for x value offset of wave movement
     let xoff = 0;
     //for loop to create wave form and movement
@@ -214,7 +222,7 @@ class Wave {
 
 function Sereia(){
   //displays the sketch with a cyan background
-  background(200);
+  background(255 - cor);
   //object class function to display the boat on the canvas
   boat.display(img);
   //object class function to display the boat's action updates
