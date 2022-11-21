@@ -131,7 +131,7 @@ function draw() {
     Sereia();
      break;
       
-      /NOVO - COMEÇO
+    //NOVO - COMEÇO
   translate(0,110);
   fill(255,255,255, 0);
  if (mouseButton == LEFT) {
